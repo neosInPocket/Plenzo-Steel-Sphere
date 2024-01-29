@@ -7,8 +7,8 @@ public class MainData
 	public bool firstGamePlaying = true;
 
 	public int score = 1;
-	public int skinIndex;
-	public bool[] skinBought = { true, false, false };
-	public bool musicEnabled = false;
-	public bool sfxEnabled = false;
+	public int skinIndex = 1;
+	public bool[] skinBought = { false, true, false };
+	public bool musicEnabled = true;
+	public bool sfxEnabled = true;
 }
