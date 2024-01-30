@@ -26,12 +26,12 @@ public class PanelsTransition : MonoBehaviour
 
 		while (time > 0)
 		{
-			time -= speed;
+			time -= speed * Time.deltaTime;
 
 			currentScale.x = fadeIn.Evaluate(time);
 			currentScale.y = currentScale.x;
 			currentScreen.transform.localScale = currentScale;
-			yield return new WaitForFixedUpdate();
+			yield return null;
 		}
 
 		time = 0;
@@ -54,12 +54,12 @@ public class PanelsTransition : MonoBehaviour
 
 		while (time < 1)
 		{
-			time += speed;
+			time += speed * Time.deltaTime;
 			Debug.Log(time);
 			currentScale.x = fadeIn.Evaluate(time);
 			currentScale.y = currentScale.x;
 			currentScreen.transform.localScale = currentScale;
-			yield return new WaitForFixedUpdate();
+			yield return null;
 		}
 
 		time = 1;
