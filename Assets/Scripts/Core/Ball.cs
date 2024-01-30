@@ -42,17 +42,18 @@ public class Ball : MonoBehaviour
 			m_freezed = value;
 			if (value)
 			{
-				rigid.constraints = RigidbodyConstraints2D.None;
+				rigid.constraints = RigidbodyConstraints2D.FreezeAll;
 			}
 			else
 			{
-				rigid.constraints = RigidbodyConstraints2D.FreezeAll;
+				rigid.constraints = RigidbodyConstraints2D.None;
 			}
 		}
 	}
 
 	private bool m_enabled;
 	private bool m_freezed;
+	private bool m_dead;
 
 	private void Start()
 	{
@@ -63,23 +64,33 @@ public class Ball : MonoBehaviour
 
 	private void OnFingerDown(Finger finger)
 	{
-		rigid.AddForce(-Physics2D.gravity.normalized * force);
+		AddForce();
+	}
+
+	public void AddForce()
+	{
+		rigid.velocity = Vector2.zero;
+		rigid.AddForce(-Physics2D.gravity.normalized * force, ForceMode2D.Impulse);
 	}
 
 	private void OnTriggerEnter2D(Collider2D collider)
 	{
 		if (collider.TryGetComponent<Coin>(out Coin coin))
 		{
+			if (coin.collected) return;
 			OnCoinEntered?.Invoke();
+			coin.Collect();
 			return;
 		}
 
 		if (collider.TryGetComponent<Obstacle>(out Obstacle obstacle))
 		{
+			if (m_dead) return;
+			m_dead = true;
 			OnObstacleEntered?.Invoke();
 			StartCoroutine(Effect());
 			Freezed = true;
-			Enabled = true;
+			Enabled = false;
 			return;
 		}
 	}
@@ -92,6 +103,11 @@ public class Ball : MonoBehaviour
 		deathEffect.SetActive(true);
 		yield return new WaitForSeconds(1f);
 		deathEffect.SetActive(false);
+	}
+
+	public void ResetSpeed()
+	{
+		rigid.velocity = Vector2.zero;
 	}
 
 	private void OnDestroy()

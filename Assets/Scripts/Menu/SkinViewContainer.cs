@@ -187,6 +187,7 @@ public class SkinViewContainer : MonoBehaviour
 			if (SettingsManager.Settings.skinBought[0])
 			{
 				SettingsManager.Settings.skinIndex = 0;
+				SettingsManager.SetData();
 				CheckButton(0);
 				return;
 			}
@@ -199,11 +200,12 @@ public class SkinViewContainer : MonoBehaviour
 			storeManager.Refresh();
 		}
 
-		if (currentPosition.x > 0.49f || currentPosition.x > 0.51f)
+		if (currentPosition.x > 0.49f && currentPosition.x < 0.51f)
 		{
 			if (SettingsManager.Settings.skinBought[1])
 			{
 				SettingsManager.Settings.skinIndex = 1;
+				SettingsManager.SetData();
 				CheckButton(1);
 				return;
 			}
@@ -221,6 +223,7 @@ public class SkinViewContainer : MonoBehaviour
 			if (SettingsManager.Settings.skinBought[2])
 			{
 				SettingsManager.Settings.skinIndex = 2;
+				SettingsManager.SetData();
 				CheckButton(2);
 				return;
 			}
