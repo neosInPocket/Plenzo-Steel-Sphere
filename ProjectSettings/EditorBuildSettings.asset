@@ -11,4 +11,49 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 97789960f7e5f464e98695c31aec4ad9
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator.unity
+    guid: b5eb2131c8b1aee47862a21579ec3dd9
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 1.unity
+    guid: a0e613e21e09f8940820c5862f7697d0
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 2.unity
+    guid: 4eb81e9cdc5fca74692a5be3f547d200
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 3.unity
+    guid: d9a4e674fba4289439712baa4e6edb12
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 4.unity
+    guid: cfc869ec657fc624eb01cbb6e4385b31
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 5.unity
+    guid: 8b9e49429f34e324fa38dc65d3dce156
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 6.unity
+    guid: aa22002e6ba6ef44bb73a2ffcb84c668
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 7.unity
+    guid: da78de0d131a2144c91abaa5855c3b3f
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 8.unity
+    guid: 95d33b34282e61e4a98bc3658d439de5
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 9.unity
+    guid: 10cb9235130a9e14bbd12d14d83004d6
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 10.unity
+    guid: 5be40ea250eeb99439487024bdc83939
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 11.unity
+    guid: 6af62ae3298ee9242b1400f5d81a4a86
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 12.unity
+    guid: 57cb087f27e852943b8e2b4994f27e7f
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 13.unity
+    guid: 1090312ec14018649962b9c1b6d97354
+  - enabled: 1
+    path: Assets/Scenes/ObstacleRotator 14.unity
+    guid: 6ee4299ef196b87408f84a1338e5d839
   m_configObjects: {}
