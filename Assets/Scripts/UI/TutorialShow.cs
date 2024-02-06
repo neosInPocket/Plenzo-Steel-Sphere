@@ -23,7 +23,7 @@ public class TutorialShow : MonoBehaviour
 		End = end;
 		gameObject.SetActive(true);
 		Touch.onFingerDown += Next;
-		characterText.text = "WELCOME TO PLINKO!";
+		characterText.text = "WELCOME TO PLENZO STEEL SPHERE!";
 	}
 
 	private void Next(Finger finger)

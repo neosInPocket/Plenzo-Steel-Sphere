@@ -1303,7 +1303,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RESULT
+  m_text: REWARD
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 55c36f2ef8946a342a0c3b3da2a71bd9, type: 2}
   m_sharedMaterial: {fileID: 3835580869039910069, guid: 55c36f2ef8946a342a0c3b3da2a71bd9, type: 2}
@@ -1843,7 +1843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4421,7 +4421,7 @@ RectTransform:
   m_AnchorMin: {x: 0.026465027, y: 0.2008297}
   m_AnchorMax: {x: 0.57087195, y: 0.45900002}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 5.3095393}
+  m_SizeDelta: {x: 0, y: 372.61624}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1972324697
 MonoBehaviour:
@@ -4436,7 +4436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 1
-  m_AspectRatio: 0.9653465
+  m_AspectRatio: 0.71728516
 --- !u!114 &1972324698
 MonoBehaviour:
   m_ObjectHideFlags: 0
